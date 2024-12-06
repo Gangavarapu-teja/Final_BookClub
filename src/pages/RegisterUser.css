@@ -1,0 +1,112 @@
+/* Overall Form Styling */
+.registration-form-container {
+  background:linear-gradient(135deg, #e0f7fa, #fff9c4);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin: 40px auto;
+  max-width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.registration-form-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+.registration-form-container h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form-container h3 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Input Fields */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+form .form-control:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+button[type="submit"] {
+  width: 100%;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Toggle Button Group */
+.customButtonGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.customButtonGroup .btn-outline-primary,
+.customButtonGroup .btn-outline-secondary {
+  flex: 1;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.customButtonGroup .btn-outline-primary {
+  background-color: #f8f9fa;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+.customButtonGroup .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+.customButtonGroup .btn-outline-secondary {
+  background-color: #f8f9fa;
+  border: 2px solid #6c757d;
+  color: #6c757d;
+}
+.customButtonGroup .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registration-form-container {
+      padding: 20px;
+  }
+  .customButtonGroup {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
